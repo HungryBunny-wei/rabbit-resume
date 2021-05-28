@@ -1,0 +1,81 @@
+<!--<h1 class="my-8 text-center text-6xl font-bold"><span class="text-teal-500">TailwindCSS</span> and <span class="text-red-600">Angular</span> is awesome!</h1>-->
+<!--<p class="text-center text-3xl">Thanks for reading!</p>-->
+
+<div class="w-full m-auto rounded-md shadow-md lg:flex lg:mt-16 print:mt-0 lg:a4">
+  <!-- 左侧 -->
+  <div class="w-full lg:flex-1 p-6 pb-0 lg:p-16 bg-gray-100 print:bg-white print:border-2">
+    <img class="rounded-full w-16 mb-4 lg:w-32" src="../assets/波登可_square.jfif">
+    <div class="text-4xl mb-2">RabbitKiller</div>
+    <p class="text-2xl mb-2">Web/Nodejs</p>
+    <div class="text mb-0.5 flex">
+      <div class="font-medium mr-1">Call</div>
+      <div class="font-extralight">*** **** ****</div>
+    </div>
+    <div class="text mb-0.5 flex">
+      <div class="font-medium mr-1">Email</div>
+      <div class="font-extralight">*********@qq.com</div>
+    </div>
+    <div class="h-6"></div>
+
+    <!-- 技能 -->
+    <p class="text-2xl mb-2">SKILLS</p>
+    <div class="text flex flex-row">
+      <div class="mr-4">
+        <div *ngFor="let skill of resume.skills" class="font-medium h-6">{{skill.title}}</div>
+      </div>
+      <div class="flex-1">
+        <div *ngFor="let skill of resume.skills" class="h-6 flex-1 flex items-center">
+          <div *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]" class="inline-block w-2 h-2 rounded-full mr-1"
+               [class.bg-black]="i <= skill.level" [class.bg-gray-400]="i > skill.level"></div>
+        </div>
+      </div>
+    </div>
+    <div class="h-6"></div>
+    <!-- 教育背景 -->
+    <p class="text-2xl mb-2">EDUCATION</p>
+    <div *ngFor="let education of resume.educations">
+      <div>{{education.degreeTitle}}</div>
+      <div>{{education.universityName}}</div>
+      <div>{{education.time}}</div>
+    </div>
+  </div>
+  <!-- 右侧 -->
+  <div class="w-full lg:flex-1 p-6 pt-0 lg:p-16 bg-white overflow-hidden">
+    <p class="text-2xl mb-2">EXPERIENCE</p>
+    <div class="flex items-center text-sm font-bold mb-2">
+      <div class="flex-1">快速开发平台</div>
+      <div class="inline-block w-1 h-1 rounded-full mr-1 inline-block bg-black"></div>
+      <div class="inline-block">2034 - 2035</div>
+    </div>
+    <div class="text-sm font-bold">深圳飞速创软有限公司</div>
+    <div class="text-sm">
+      开发快速开发平台。能够在网页上创建项目，一键生成前端和后端项目代码，创建页面并使用拖拽组件工具使用拖拽方式开发表单页面，通过建模的方式创建数据库表并且通过暴露api使用前后台关联，并且能够通过一键发布部署到服务器并且访问。
+    </div>
+    <div class="mb-8">
+      <ul class="text-sm list-disc list-inside">
+        <li>负责开发平台的架构，技术实现方案和开发方面的产品设计</li>
+        <li>完善公司前端代码规范，git提交规范，引入IDE的设计模式</li>
+        <li>添加插件与指令等功能解决不同公司需要定制开发平台的需求。</li>
+      </ul>
+    </div>
+    <div class="flex items-center text-sm mb-2">
+      <div class="flex-1">快速开发平台</div>
+      <div class="inline-block w-1 h-1 rounded-full mr-1 inline-block bg-black"></div>
+      <div class="inline-block">2034 - 2035</div>
+    </div>
+    <div class="text-sm font-bold">深圳飞速创软</div>
+    <div class="text-sm">
+      开发快速开发平台。能够在网页上创建项目，一键生成前端和后端项目代码，创建页面并使用拖拽组件工具使用拖拽方式开发表单页面，通过建模的方式创建数据库表并且通过暴露api使用前后台关联，并且能够通过一键发布部署到服务器并且访问。
+    </div>
+    <div class="mb-8">
+      <ul class="text-sm list-disc list-inside">
+        <li>负责开发平台的架构，技术实现方案和开发方面的产品设计</li>
+        <li>完善公司前端代码规范，git提交规范，引入IDE的设计模式</li>
+        <li>添加插件与指令等功能解决不同公司需要定制开发平台的需求。</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<OBJECT classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2" height="0" id="wb" name="wb" width="0">
+</OBJECT>

@@ -12,5 +12,5 @@ ng config projects.tailwindcss-angular-app.architect.build.options.customWebpack
 ng config projects.tailwindcss-angular-app.architect.serve.builder @angular-builders/custom-webpack:dev-server
 ng config projects.tailwindcss-angular-app.architect.serve.options.customWebpackConfig.path webpack.config.js
 
-
-npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css
+npm install tailwindcss postcss autoprefixer
+NODE_ENV=production npx tailwindcss-cli@latest build ./src/tailwind.css -o ./src/tailwind.build.css
